@@ -1,0 +1,21 @@
+Git add new
+create repo in github, then -
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:thisisved/flappy-bird-js.git
+git push -u origin main
+
+-------------------------------------------------------------
+Update files
+git add .
+git commit -m "Updatex"
+git push -u origin main
+
+----------------------------------
+Setup SSh
+ssh-keygen -t rsa -b 4096 -C "thisisvedprakash@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub -> Key to Github settings - ssh-add
